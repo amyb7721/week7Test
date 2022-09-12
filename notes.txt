@@ -1,12 +1,14 @@
-ExtraLargeArray: insert is 772.537792 and append is 2.349167. Append is the faster time. 
+ExtraLargeArray: insert is 772.537792 miliseconds and append is 2.349167 miliseconds. Append is the faster time. 
 
-LargeArray: insert is 6.489542 and append is 450.042. insert is faster.
+LargeArray: insert is 6.489542 miliseconds and append is 450.042 miliseconds. insert is faster.
 
-MediumArray: insert is 161.208 and append is 124.208. append is faster
+MediumArray: insert is 161.208 microseconds and append is 124.208 microseconds. append is faster
 
-SmallArray: insert is 22.375 and append is 45.042. insert is faster.
+SmallArray: insert is 22.375 microseconds and append is 45.042 microseconds. insert is faster.
 
-TinyArray: insert is 19.75 and append is 54.667. insert is faster. 
+TinyArray: insert is 19.75 microseconds and append is 54.667 microseconds. insert is faster. 
 
 
-The function that scales better is insert. It's O(n) and the problem requires a small amount of processing time for each element in the input. 
+The append is slower when the array is small. As it gets bigger the append becomes faster. the append scale is O(n) and the insert scale is O(n^2). the appen scale is better. 
+
+

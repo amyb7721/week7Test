@@ -1,49 +1,57 @@
 // 1. SumZero
-// function numbers([N], sum) {
-//     x = 0;
-//     y = N.length - 1;
-//     while (x < y) {
-//       if (N[x] + N[y] == sum)
-//         return true;
-//       else if (N[x] + N[y] < sum)
-//         x++;
-//       return false
-//     }}
-  
-//   console.log(numbers([1]))
+
+// Time complexity: O(n^2)
+//   Space Complexity: O(1)
+function addToZero(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let k = 0;  k < arr.length; k++) {
+          if (i !== k && arr [i] + arr [k] === 0) {
+            return true
+          }
+        }
+    }
+    return false
+}
+
+console.log(addToZero ([7,8,3,6]))
 
   // 2. unque characters
 
-//   function uniqueString(str) {
-//     let queue =str.split('');
-//     let arr = [];
-//     while (queue.length > 0) {
-//         let current = queue.shift();
-//         if (!arr.includes(current)) {
-//             arr.push(current);
-//         }
-//     }
-//     return arr.join('');
-// }
 
-// console.log(uniqueString("Monday"))
+//   Time complexity:
+//   Space Complexity:
+  function uniqueChar(str) {
+    for (let i = 0; i < str.length; k++) {
+      for (let k = 0; k <str.length; k++) {
+        if (i !== k && str[i] + str[k] === 0) {
+          return false 
+        }
+      }
+      return true
+    }
+  }
+
+console.log(uniqueChar("Monday"))
 
 // 3. pangram sentence
 
+// Time complexity: O(n)
+//   Space Complexity:  O(1)
 
-// function isPangram(string){
-//     let strArr = string.toLowerCase();
-//     let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+function isPangram(string){
+    let strArr = string.toLowerCase();
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
     
-//     for (let i = 0; i < alphabet.length; i++) {
-//       if(strArr.indexOf(alphabet[i]) < 0){
-//         return false;
-//       }
-//     }
-//     return true;
-//   }
+    for (let i = 0; i < alphabet.length; i++) {
+      if(strArr.indexOf(alphabet[i]) < 0){
+        return false;
+      }
+    }
+    return true;
+  }
 
-//   console.log(isPangram("The quick brown fox jumps over the lazy dog!"))
+  console.log(isPangram("The quick brown fox jumps over the lazy dog!"))
 
 //   4. 
 
